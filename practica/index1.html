@@ -6,7 +6,7 @@
     <title>Sitio web sobre el Pull Requests</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body> 
     <h1>¿Cómo usar Pull Requests en GitHub en colaboración?</h1>
 
     <h3>En este sitio web, se presentará una guía para hacer uso del Pull Requests en GitHub colaborativo</h3>
@@ -25,32 +25,58 @@
         como sobrescribir el trabajo no sincronizado de otros colaboradores.<br>Por lo mencionado anteriormente, se debe crear
         una nueva rama, donde cada contribuyente maneje una rama personal.
     </p>
-    
-    <h2>📌 Pasos para usar Pull Requests en GitHub</h2>
+    <section class="introduccion">  
+    <h2>📌 Antes de iniciar el Pull request debemos de...</h2>
     <p>1️⃣ Crear una nueva rama</p>
     <div style="margin-left: 25px">
-        <p style="color:mediumvioletred"><strong>git checkout -b nuevaRama</strong></p>
-    <img src="nuevaRama.png" alt="crear nueva rama" width="700" height="100">
+        <p><strong>git checkout -b nuevaRama</strong></p>
+            <img src="nuevaRama.png" alt="crear nueva rama" width="700" height="100">
     </div>
 
     <p>2️⃣ Realizar cambios en el código</p>
     <div style="margin-left: 25px">
-        <p style="color:mediumvioletred"><strong>git add . <br>git commit -m "Descripción de los cambios realizados"</strong></p>
-    <img src="guardar cambios.png" alt="cambios" width="700" height="100">
+        <p><strong>git add . <br>git commit -m "Descripción de los cambios realizados"</strong></p>
+            <img src="guardar cambios.png" alt="cambios" width="700" height="100">
     </div>
 
     <p>3️⃣ Subir la Rama a GitHub</p>
     <div style="margin-left: 25px">
-        <p style="color:mediumvioletred"><strong>git push -u origin nuevaRama</strong></p>
-    <img src="ramagithub.png" alt="en github" width="700" height="100">
+        <p><strong>git push -u origin nuevaRama</strong></p>
+            <img src="ramagithub.png" alt="en github" width="700" height="200">
     </div>
 
     <p style="margin-left: 65px"><em>💻 Se puede verificar la nueva rama creada en el github (2 branches)</em></p>
     <div style="margin-left: 80px">
-        <img src="ramaverifi.png" alt="en github" width="150" height="100">
+        <img src="ramaverifi.png" alt="en github" width="200" height="150">
     </div>
 
+    </section>  
 
+    <section class="pullrequest">  
+    <h2>📌 Pasos para usar Pull Requests en GitHub</h2>
+    <p>1️⃣ Abrir un Pull Request</p>
+    <div style="margin-left: 25px">
+        <p><em> ✅ Ve a tu repositorio en GitHub.</em></p>
+            <p style="margin-left: 30px">Te notificará un push reciente en la rama previamente creada:</p>
+                 <img src="pullrequest.png" alt="ir a repositorio" width="700" height="200">
+
+        <p><em> ✅ En "Compare & pull request".</em></p>
+            <p style="margin-left: 30px">Se comparan las ramas para verificar hacer posible el merge sin problemas:</p>
+                <img src="comparación.png" alt="ir a repositorio" width="700" height="200">
+        
+        <p><em> ✅ Agregar un comentario claro del cambio realizado.</em></p>
+            <p style="margin-left: 30px">Una vez comentado, haz clic en "Create Pull Request"</p>
+
+        <p><em> ✅ Pull request creado.</em></p>
+            <p style="margin-left: 30px">Una vez revisado, se decidirá aprobar el PR si todo está bien</p>
+                <img src="resultado.png" alt="ir a repositorio" width="650" height="300">
+
+    <p>2️⃣ Hacer merge del Pull Request</p>
+    <div style="margin-left: 25px">
+        <p><strong>a. Haz clic en "Merge Pull Request"</strong></p>
+        <p><strong>b. Elimina la rama para mantener el repositorio ordenado y listo para nuevas tareas</strong></p>
+    </div>
+    </section> 
 
 
     <h3>🔍¡IMPORTANTE!</h3>
