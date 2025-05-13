@@ -1,9 +1,18 @@
 h1 {
+    text-align: center;
     color:blueviolet
 }
-p {
+h3 {
     color:orchid
 }
 body {
+    margin-left: 40px; /* 40 píxeles de margen izquierdo */
+    margin-right: 40px; /* 40 píxeles de margen derecho */
     background-color: beige;
+}
+p {
+    color:#1c2833
+}
+h2 {
+    color:darkmagenta
 }

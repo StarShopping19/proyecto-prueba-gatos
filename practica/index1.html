@@ -8,9 +8,57 @@
 </head>
 <body>
     <h1>¿Cómo usar Pull Requests en GitHub en colaboración?</h1>
-    <p>En este sitio web, se presentará una guía para hacer uso del Pull Requests en GitHub colaborativo</p>
+
+    <h3>En este sitio web, se presentará una guía para hacer uso del Pull Requests en GitHub colaborativo</h3>
+
     <div style="text-align: center;">
         <img src="https://media.crystallize.com/crystallize_marketing/24/9/4/1/pull_requests_best_practices.jpg" alt="pull request" width="700">
     </div>
+
+    <p>Los Pull Requests (PRs) en GitHub son una herramienta esencial para la 
+        colaboración en proyectos de desarrollo. Permiten a los equipos trabajar 
+        en código de forma ordenada, proponer cambios y revisarlos antes de integrarlos
+        en la rama principal.</p>
+
+    <h3>Tener en cuenta que ...</h3>
+    <p>Para realizar cambios se debe evitar usar la rama principal (main) pues, puede llegar a causar conflictos
+        como sobrescribir el trabajo no sincronizado de otros colaboradores.<br>Por lo mencionado anteriormente, se debe crear
+        una nueva rama, donde cada contribuyente maneje una rama personal.
+    </p>
+    
+    <h2>📌 Pasos para usar Pull Requests en GitHub</h2>
+    <p>1️⃣ Crear una nueva rama</p>
+    <div style="margin-left: 25px">
+        <p style="color:mediumvioletred"><strong>git checkout -b nuevaRama</strong></p>
+    <img src="nuevaRama.png" alt="crear nueva rama" width="700" height="100">
+    </div>
+
+    <p>2️⃣ Realizar cambios en el código</p>
+    <div style="margin-left: 25px">
+        <p style="color:mediumvioletred"><strong>git add . <br>git commit -m "Descripción de los cambios realizados"</strong></p>
+    <img src="guardar cambios.png" alt="cambios" width="700" height="100">
+    </div>
+
+    <p>3️⃣ Subir la Rama a GitHub</p>
+    <div style="margin-left: 25px">
+        <p style="color:mediumvioletred"><strong>git push -u origin nuevaRama</strong></p>
+    <img src="ramagithub.png" alt="en github" width="700" height="100">
+    </div>
+
+    <p style="margin-left: 65px"><em>💻 Se puede verificar la nueva rama creada en el github (2 branches)</em></p>
+    <div style="margin-left: 80px">
+        <img src="ramaverifi.png" alt="en github" width="150" height="100">
+    </div>
+
+
+
+
+    <h3>🔍¡IMPORTANTE!</h3>
+    <p>✔ Especificar claramente los cambios para ayudar en la revisión.<br>✔ Usar 
+        revisiones de código (Code Reviews) para mejorar calidad y 
+        evitar errores.<br>✔ Etiquetas y asignaciones para organizar 
+        PRs dentro del equipo.<br>✔ Resolver conflictos antes de hacer merge
+        si hay cambios incompatibles
+</p>
 </body>
 </html>
